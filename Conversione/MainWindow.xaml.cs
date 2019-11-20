@@ -24,5 +24,22 @@ namespace Conversione
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string n = txtBinario.Text;
+            if (combobox.SelectedIndex == 0)
+            {
+                int risultato = Convert.ToInt32(n, 2);
+                txtNulla.Text = risultato.ToString();
+            }
+            else if (combobox.SelectedIndex == 1)
+            {
+                int a = int.Parse(n);
+                string risultato = Convert.ToString(a, 2);
+                txtNulla.Text = risultato.ToString();
+            }
+            
+        }
     }
 }

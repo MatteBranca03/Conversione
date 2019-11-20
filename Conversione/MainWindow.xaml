@@ -7,6 +7,15 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <ComboBox Name="combobox" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Margin="70,93,0,0" Height="60">
+            <ComboBox>Da Binario</ComboBox>
+            <ComboBox>Da decimale</ComboBox>
+        </ComboBox>
+        <TextBox Name="txtBinario"  HorizontalAlignment="Left" Height="60" Margin="440,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <Button Name="txtConversione" Content="Converti" HorizontalAlignment="Left" Margin="70,248,0,0" VerticalAlignment="Top" Width="155" Height="57" FontSize="18" Click="Button_Click"/>
+        <TextBox Name="txtNulla" HorizontalAlignment="Left" Height="60" Margin="440,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" IsReadOnly="True"/>
+        <Label Content="Inserisci la base" HorizontalAlignment="Left" Margin="70,35,0,0" VerticalAlignment="Top" Width="170" Height="41" FontSize="18"/>
+        <Label Content="Inserisci il numero" HorizontalAlignment="Left" Margin="440,35,0,0" VerticalAlignment="Top" Width="170" Height="41" FontSize="18"/>
+
     </Grid>
 </Window>
